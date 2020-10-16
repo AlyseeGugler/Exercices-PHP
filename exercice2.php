@@ -1,12 +1,10 @@
 <?php
 $length = 100;
-
-function initArray($length) {
+$val = 1;
+function initArray(array $array, int $length, $val) :void {
     for ($i=0;$i<$length; $i++){
-        $array[]=$i;
-        echo $array[$i]." ";
+        $array[]=$val;
     }
 }
 
-initArray($length);
-?>
+initArray([], 10, 2);

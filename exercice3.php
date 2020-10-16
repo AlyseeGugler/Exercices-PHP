@@ -1,11 +1,12 @@
 <?php
 $array=[1,2,3,4,5];
-$count=0;
-function countArray($array, $count){
+
+function countArray(array $array) :int{
+    $count=0;
     foreach ($array as $element){
-        $count=$count+1;
+        $count++;
     }
-    echo $count;
+    return $count;
 }
 
-countArray($array, $count);
+countArray($array);
